@@ -115,3 +115,4 @@ tomcat8/conf/jaspic-providers.xml
 tomcat8/conf/jaspic-providers.xsd
 tomcat8/conf/logging.properties
 tomcat8/conf/web.xml
+tomcat8/conf/tomcat-users.xsd
