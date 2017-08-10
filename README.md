@@ -30,6 +30,7 @@ keytool -importcert -keystore server.jks -alias clientcert -file client-public.c
 keytool -importkeystore -srckeystore client.jks -destkeystore client.p12 -deststoretype PKCS12 -srcalias clientkey -deststorepass s3cr3t -destkeypass s3cr3t
 ```
 
+Configure the connector on server.xml
 ```
 <Connector port="8443" protocol="org.apache.coyote.http11.Http11NioProtocol" SSLEnabled="true"
  maxThreads="150" scheme="https" secure="true"
