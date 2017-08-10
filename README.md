@@ -26,6 +26,7 @@ This command imports the client certificate into the "server.jks" file.
 keytool -importcert -keystore server.jks -alias clientcert -file client-public.cer -storepass s3cr3t -noprompt
 ```
 
+This command create the p12 certificate for the browser.
 ```
 keytool -importkeystore -srckeystore client.jks -destkeystore client.p12 -deststoretype PKCS12 -srcalias clientkey -deststorepass s3cr3t -destkeypass s3cr3t
 ```
