@@ -32,11 +32,10 @@ keytool -importkeystore -srckeystore client.jks -destkeystore client.p12 -destst
 
 ```
 <Connector port="8443" protocol="org.apache.coyote.http11.Http11NioProtocol" SSLEnabled="true"
-	           maxThreads="150" scheme="https" secure="true"
-	           keystoreFile="server.jks" keystorePass="password"
-	           truststoreFile="trust.jks" truststorePass="password"
-	           clientAuth="want" sslProtocol="TLS" />
-
+ maxThreads="150" scheme="https" secure="true"
+ keystoreFile="${catalina.home}/conf/certs/server.jks" keystorePass="s3cr3t"
+ truststoreFile="${catalina.home}/conf/certs/server.jks" truststorePass="s3cr3t"
+ clientAuth="true" sslProtocol="TLS" />
 ```
 
 Disable on server.xml	    
