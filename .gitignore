@@ -108,3 +108,10 @@ tomcat8/webapps/*
 tomcat8/logs/*
 tomcat8/lib/*
 tomcat8/work/*
+tomcat8/conf/catalina.policy
+tomcat8/conf/catalina.properties
+tomcat8/conf/context.xml
+tomcat8/conf/jaspic-providers.xml
+tomcat8/conf/jaspic-providers.xsd
+tomcat8/conf/logging.properties
+tomcat8/conf/web.xml
